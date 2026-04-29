@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  
 }
 
 body {
@@ -260,5 +261,326 @@ body {
   .tag-two {
     left: -10px;
     bottom: 20px;
+  }
+}
+.hero-text h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.hero-text p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Services Section Only */
+.services {
+  padding: 100px 8%;
+  text-align: center;
+  background: #f5f7f6;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.services h1 {
+  font-size: 42px;
+  color: #1f5130;
+  margin-bottom: 10px;
+  animation: fadeDown 1s ease;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+  animation: fadeUp 1s ease;
+}
+
+/* Container */
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.service-card {
+  background: #ffffff;
+  width: 280px;
+  padding: 35px 25px;
+  border-radius: 25px;
+  border: 2px solid #1f5130;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
+  animation: fadeUp 1s ease;
+}
+
+/* Hover */
+.service-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  background: #1f5130;
+}
+
+/* Icon */
+.service-icon {
+  width: 70px;
+  height: 70px;
+  background: #f7b500;
+  color: #1f5130;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+.service-card:hover .service-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+/* Text */
+.service-card h3 {
+  color: #1f5130;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.service-card:hover h3,
+.service-card:hover p {
+  color: #fff;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services {
+    padding: 60px 5%;
+  }
+
+  .services h1 {
+    font-size: 32px;
+  }
+
+  .service-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+/* Education Section */
+.education {
+  padding: 100px 8%;
+  text-align: center;
+  background: #f5f7f6;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.education h1 {
+  font-size: 42px;
+  color: #1f5130;
+  margin-bottom: 10px;
+  animation: fadeDown 1s ease;
+}
+
+.edu-subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 50px;
+  animation: fadeUp 1s ease;
+}
+
+/* Container */
+.edu-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.edu-card {
+  background: #fff;
+  width: 260px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  border: 2px solid #1f5130;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.4s;
+  animation: fadeUp 1s ease;
+}
+
+/* Hover */
+.edu-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: #1f5130;
+}
+
+/* Icon */
+.edu-icon {
+  width: 65px;
+  height: 65px;
+  background: #f7b500;
+  color: #1f5130;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+/* Text */
+.edu-card h3 {
+  color: #1f5130;
+  margin-bottom: 10px;
+}
+
+.edu-card p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* Hover text */
+.edu-card:hover h3,
+.edu-card:hover p {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .edu-card {
+    width: 100%;
+    max-width: 300px;
+    
+}
+  }
+.service-card,
+.edu-card {
+  background: #fff;
+  border: 2px solid #1f5130;
+}
+
+
+.about,
+.contact {
+  padding: 100px 8%;
+  text-align: center;
+  background: #f0f5f2; /* light green background */
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.about h1,
+.contact h1 {
+  font-size: 42px;
+  color: #1f5130;
+  margin-bottom: 40px;
+  animation: fadeDown 1s ease;
+}
+
+/* Card */
+.about-card,
+.contact-card {
+  width: 420px;
+  max-width: 90%;
+  margin: auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border: 2px solid #1f5130;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: 0.4s;
+  animation: fadeUp 1s ease;
+}
+
+/* Hover */
+.about-card:hover,
+.contact-card:hover {
+  background: #1f5130;
+  transform: translateY(-10px);
+}
+
+/* Icon (now green only) */
+.about-icon,
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  background: #1f5130; /* green */
+  color: #fff; /* white icon */
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* Text */
+.about-card p,
+.contact-card p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Hover text */
+.about-card:hover p,
+.contact-card:hover p {
+  color: #fff;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
